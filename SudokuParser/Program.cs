@@ -45,6 +45,8 @@ namespace SudokuParser
                         ParseLine(lines[lineIdx]));
                 }
             }
+
+            currentWriter?.Dispose();
         }
 
         private static string ParseLine(string line)
